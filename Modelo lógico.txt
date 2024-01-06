@@ -1,0 +1,2 @@
+Algebra relacional
+La base de datos es un conjunto de relaciones

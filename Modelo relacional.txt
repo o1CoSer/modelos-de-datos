@@ -1,0 +1,1 @@
+Permite transformar el modelo entidad - relación, en un conjunto de relaciones que se presentan de forma más simplificada.
