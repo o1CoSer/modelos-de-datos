@@ -1,3 +1,19 @@
 El número de entidades a las que otra entidad puede estar asociada via un conjunto de relaciones.
 El númerp de tuplas.
 El número de atributos es el grado.
+
+Cardinalidad uno a uno:
+MER 1:1  3 opciones transformación a MR
+-Propagar la clave primaria de A como clave foranea de B
+-Propagar la clave primaria de B como clave foránea de A.
+-Propagar ambas claves primarias como claves foráneas de la otra relación.
+
+Cardinalidad uno a muchos:
+MER 1:n ; n:1 opciones transformación a MR
+-Si se trata de una relación reflexiva se debe hacer una copia de la clave primaria de la entidad, pero cambiándola de nombre y se guarda como clave foránea.
+-Si no se trata de una relación reflexiva, entonces se propaga la clave primaria de la entidad que tiene una participación máxima de 1 a la entidad que tiene una participación máxima de N como clave foránea. Si la relación de un MER tuviera atributos se añadirían también a la entidad que tiene una participación máxima de n.
+
+Cardinalidad muchos a muchos:
+La relación se transforma en una tabla cuyo nombre será la unión de dos entidades relacionadas, su cardinalidad será de n:1 con respecto a ellas y la cual tendrá como claves foráneas las claves primarias de las entidades participantes.
+Si la relación del Mer tuviera atributos se deberán de considerar en esta nueva tabla y respetar si alguno de ellos esá marcado como clave primaria. Este proceso también se hace en relaciones reflexivas.
+
